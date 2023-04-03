@@ -7,7 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
   <title>Frontend Mentor | Results summary component</title>
-
+  <link href="/dist/output.css" rel="stylesheet">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -15,33 +15,66 @@
   </style>
 </head>
 <body>
-
-  Your Result
-  76
-  of 100
-
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
-
-  Reaction
-  80 / 100
-
-  Memory
-  92 / 100
-
-  Verbal
-  61 / 100
-
-  Visual
-  72 / 100
-
-  Continue
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <div class="flex w-full h-screen justify-center items-center">
+    <div class="w-60 h-80 flex justify-center items-center">
+        <div class="container flex flex-col items-center p-4 rounded-3xl w-60 h-80 bg-gradient-to-t to-primary-background-slate-blue from-primary-background-royal-blue">
+            <span class="font-HankenGrotesk text-sm mb-5 mt-1 text-gray-300 font-semibold">Your Result</span>
+            <div class="rounded-full font-HankenGrotesk text-white from-primary-circle-violet-blue to-primary-circle-persian-blue bg-gradient-to-b">
+                <div class="w-32 h-32 font-HankenGrotesk-ExtraBold font-extrabold  text-5xl flex flex-col justify-center items-center -mt-2">76
+                    <div class="font-normal text-gray-400 text-7xl -mt-2">
+                        of 100
+                    </div>
+                </div>
+                <div class="items-center flex justify-center"></div>
+            
+            </div>
+            <div class="flex flex-col justify-center items-center">
+            <span class="text-xl text-white font-medium mt-4 mb-2">Great</span>
+            <span class="text-gray-400 text-7xl ml-6 mr-6 font-medium text-center">You scored higher than 65% of the people who have taken these tests.</span>
+            </div>
+        </div>
+    </div>
+    <div class="w-65 h-80 flex justify-center items-center">
+        <div class="p-6 w-65 h-80 shadow-xl rounded-3xl">
+            <div class="font-HankenGrotesk-Medium">Summary</div>
+            <div class="h-9 w-52 bg-primary-light-red bg-opacity-10 rounded-md text-pink-50 text-sm flex mt-4">
+                <div class="flex items-center">
+                    <img class="h-4 w-4 ml-3" src="/images/icon-reaction.svg" alt="">
+                    <span class="text-primary-light-red text-xs font-bold mr-16 ml-2">Reaction</span>
+                    <span class="text-xs text-black font-bold">80&nbsp</span><span class="text-gray-500 text-xs font-bold">/ 100</span>
+                </div>
+            </div>
+            <div class="h-9 w-52 bg-primary-Orangey-yellow bg-opacity-10 rounded-md text-sm flex mt-4">
+                <div class="left flex items-center">
+                    <img class="h-4 w-4 ml-3" src="/images/icon-memory.svg" alt="">
+                    <span class="text-primary-Orangey-yellow text-xs font-bold text-right mr-16 ml-2">Visual</span>
+                </div>
+                <div class="right flex w-52 justify-end items-center">
+                    <span class="text-xs text-black font-bold">80&nbsp</span><span class="text-gray-500 text-xs font-bold">/ 100&nbsp&nbsp</span>
+                </div>
+            </div>
+            <div class="h-9 w-52 bg-primary-Green-teal bg-opacity-10 rounded-md text-sm flex mt-4">
+                <div class="left flex items-center">
+                    <img class="h-4 w-4 ml-3" src="/images/icon-verbal.svg" alt="">
+                    <span class="text-primary-Green-teal text-xs font-bold text-right mr-16 ml-2">Verbal</span>
+                </div>
+                <div class="right flex w-52 justify-end items-center">
+                    <span class="text-xs text-black font-bold">80&nbsp</span><span class="text-gray-500 text-xs font-bold">/ 100&nbsp&nbsp</span>
+                </div>
+            </div>
+            <div class="h-9 w-52 bg-primary-Light-lavender bg-opacity-10 rounded-md text-sm flex mt-4">
+                <div class="left flex items-center">
+                    <img class="h-4 w-4 ml-3" src="/images/icon-visual.svg" alt="">
+                    <span class="text-primary-Light-lavender text-xs font-bold text-right mr-16 ml-2">Visual</span>
+                </div>
+                <div class="right flex w-52 justify-end items-center">
+                    <span class="text-xs text-black font-bold">80&nbsp</span><span class="text-gray-500 text-xs font-bold">/ 100&nbsp&nbsp</span>
+                </div>
+            </div>
+            <div class="continue h-9 w-52 bg-primary-Dark-gray-blue rounded-3xl flex items-center justify-center mt-4">
+                <span class="font-HankenGrotesk text-white text-xs">Continue</span>
+            </div>
+    </div>
+</div>
 </body>
 </html>
